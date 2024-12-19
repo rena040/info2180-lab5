@@ -1,0 +1,140 @@
+/* Reset and base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(90deg, #1d3557, #457b9d);
+    color: #f1faee;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1::before {
+    content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Globe_icon.svg/1024px-Globe_icon.svg.png"); /* Example globe icon */
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* Main content styling */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Controls styling */
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#controls label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+#controls input[type="search"] {
+    padding: 12px;
+    width: 350px;
+    border: 2px solid #457b9d;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#controls button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#controls button#lookup {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+#controls button#lookup:hover {
+    background-color: #21867a;
+}
+
+#controls button#lookupCities {
+    background-color: #e63946;
+    color: white;
+}
+
+#controls button#lookupCities:hover {
+    background-color: #b52b36;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #1d3557;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f1f5f9;
+}
+
+table tbody tr:hover {
+    background-color: #e2e8f0;
+    transition: background-color 0.2s;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #1d3557, #457b9d);
+    color: #f1faee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
